@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="TWC Rapid CBR">
+  <rect width="32" height="32" rx="6" fill="#0b2c4d"/>
+  <path fill="#f7a600" d="M16 4.5 L26 8.2 V16.2 C26 22.1 21.8 26.8 16 28.5 C10.2 26.8 6 22.1 6 16.2 V8.2 Z"/>
+  <path fill="#081d33" d="M16 8.2 L22.4 10.4 V16.1 C22.4 20.1 19.5 23.4 16 24.6 C12.5 23.4 9.6 20.1 9.6 16.1 V10.4 Z"/>
+  <circle cx="16" cy="15.6" r="3.1" fill="#22b8cf"/>
+</svg>
