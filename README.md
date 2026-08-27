@@ -2,7 +2,13 @@
 
 Shop, dual-route methodology and GroundCheck tester for the **TWC Rapid CBR Field Kit**.
 
-**Live path:** [temporaryworksconsulting.com/CBR-Testing](https://www.temporaryworksconsulting.com/CBR-Testing)
+| Where | URL |
+|---|---|
+| Interactive shop + GroundCheck | [cbr-testing.vercel.app](https://cbr-testing.vercel.app) |
+| Consultancy path (Netlify) | [temporaryworksconsulting.com/CBR-Testing](https://www.temporaryworksconsulting.com/CBR-Testing) |
+| Source | this repo |
+
+The consultancy path is a static TWC-branded storefront in [`dm1033/twc-website`](https://github.com/dm1033/twc-website) at `CBR-Testing/`. Link that repo to the Netlify site for `temporaryworksconsulting.com` (branch `main`, publish `.`) and the path goes live.
 
 ## What contractors buy
 
@@ -17,7 +23,3 @@ Hardware is a UK **TRL-pattern Dynamic Cone Penetrometer** in the [Impact Test S
 Not a substitute for BS 1377-9 plate bearing. Screening CBR from ASTM D6951 / USACE. Dual-route: Route A standard pads if all four points pass; Route B 1.5 × 1.5 m mats otherwise.
 
 Orders: WhatsApp [07900 984900](https://wa.me/447900984900) or [david@Temporaryworksconsulting.com](mailto:david@Temporaryworksconsulting.com). VAT invoice from Temporary Works Consulting & Design Ltd.
-
-## Repo
-
-This repository is the source for the CBR-Testing site (TanStack Start / Vercel). The production URL on the consultancy domain is served from `twc-website` at `/CBR-Testing/`.
