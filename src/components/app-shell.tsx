@@ -11,6 +11,9 @@ const NAV = [
   { to: "/guide", label: "Method", icon: FileSpreadsheet },
 ];
 
+const WA_ORDER =
+  "https://wa.me/447900984900?text=Hello%20David%2C%20I%20want%20the%20TWC%20Rapid%20CBR%20Field%20Kit.";
+
 export function AppShell({ children }: { children: ReactNode }) {
   const pathname = useRouterState({ select: (s) => s.location.pathname });
   return (
@@ -25,13 +28,13 @@ export function AppShell({ children }: { children: ReactNode }) {
       </div>
       <header className="sticky top-0 z-20 border-b border-white/10 bg-navy text-paper">
         <div className="mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-3">
-          <Link to="/" className="flex items-center gap-2.5">
+          <Link to="/" className="flex min-w-0 items-center gap-2.5">
             <img
               src="/logo-twc.png"
               alt=""
               width={40}
               height={40}
-              className="size-10 rounded-sm bg-paper object-contain"
+              className="size-10 shrink-0 rounded-sm bg-paper object-contain"
             />
             <span className="leading-tight">
               <span className="block text-sm font-semibold">Temporary Works</span>
@@ -39,10 +42,11 @@ export function AppShell({ children }: { children: ReactNode }) {
             </span>
           </Link>
           <a
-            href="https://wa.me/447900984900?text=Hello%20David%2C%20I%20want%20the%20TWC%20Rapid%20CBR%20Field%20Kit."
-            className="hidden h-10 items-center rounded-full bg-amber px-4 text-sm font-semibold text-navy-2 sm:flex"
+            href={WA_ORDER}
+            className="flex h-10 shrink-0 items-center rounded-full bg-amber px-3 text-sm font-semibold text-navy-2 sm:px-4"
           >
-            WhatsApp to order
+            <span className="sm:hidden">Order</span>
+            <span className="hidden sm:inline">WhatsApp to order</span>
           </a>
         </div>
         <nav className="no-print border-t border-white/10">
@@ -89,9 +93,9 @@ export function AppShell({ children }: { children: ReactNode }) {
           <p className="max-w-md text-xs leading-relaxed">
             Screening CBR from DCP (ASTM D6951 / USACE). Not a substitute for BS 1377-9 plate bearing.
             Hardware is a TRL-pattern UK DCP (Impact SL970 class). Subject to stock and a competent
-            person on site. Live path:{" "}
-            <a className="text-paper underline" href="https://www.temporaryworksconsulting.com/CBR-Testing">
-              /CBR-Testing
+            person on site. Shop:{" "}
+            <a className="text-paper underline" href="https://cbr-testing.vercel.app">
+              cbr-testing.vercel.app
             </a>
             .
           </p>
